@@ -12,9 +12,9 @@ function Navbar () {
        
         <div className="desktopMenu">
          <Link  activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>Home</Link>
-         <Link  activeClass='active' to='SkillsTitle' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
+         <Link  activeClass='active' to='about' spy={true} smooth={true} offset={-100} duration={500} className='desktopMenuListItem'>About</Link>
          <Link  activeClass='active' to='works' spy={true} smoooth={true} offset={-80} duration={500} className='desktopMenuListItem'>Portfolio</Link>
-         <Link activeClass='active' to='clients' spy={true} smooth={true} offset={-120} duration={500} className='desktopMenuListItem'>Clients</Link>
+         <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-120} duration={500} className='desktopMenuListItem'>Contact</Link>
         </div>
           <button className="desktopMenuBtn"
           onClick={()=>{

@@ -1,51 +1,116 @@
-#works{
-    margin: 0 auto;
-    min-height: calc(100vh - 4rem);
-    padding: 0 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+#works {
+  padding: 5rem 2rem;
+  background-color: #1E1E1E;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.worksTitle {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.worksDec {
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  line-height: 1.8;
+}
+
+.worksImgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;  
+}
+
+.projectCard {
+  background-color: #2a2a2a;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 480px;   /* Wider card */
+  padding: 2.5rem;    /* More padding */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+}
+
+.worksImg {
+  width: 100%;
+  height: auto;         
+  max-height: 350px;    
+  object-fit: contain;  
+  border-radius: 1.2rem;
+  margin-bottom: 1.75rem;
+  background-color: #111; 
+}
+
+.projectInfo h3 {
+  color: yellow;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projectInfo p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.projectInfo ul {
+  padding-left: 1.2rem;
+  color: #bbb;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.projectInfo ul li {
+  margin-bottom: 0.7rem;
+}
+
+.projectInfo a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projectInfo a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for tablets and phones */
+@media screen and (max-width: 768px) {
+  .worksImgs {
     flex-direction: column;
-    max-width: 60rem;
-    width: 100vw;
-
-}
-.worksTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
-}
-.worksDec{
-    font-size: 1rem;
-    font-weight: 300rem;
-    margin-bottom: 1rem ;
-
-}
-.worksImgs{
-    width: 100vw;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 65rem;
-    flex-wrap:wrap;
-}
-.worksImg{
-    object-fit: cover;
-    margin: 1rem;
-    height: 20rem;
-}
-.workbtn{
-    padding: 0.5rem 2rem;
-    border: none;
-    background: white;
-    border-radius: 2rem;
-    margin: 3rem 2rem;
-}
-.workbtn:hover{
-    background: yellow;
-    color: purple;
-}
+    gap: 3rem;
+  }
 
-@media screen and (max-width:610px){
-    
+  .projectCard {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  .worksTitle {
+    font-size: 2.2rem;
+  }
+
+  .worksDec {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .worksImg {
+    height: 280px;
+  }
 }

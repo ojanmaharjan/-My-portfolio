@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <section id="contactPage">
-      <div id="clients">
+      {/* <div id="clients">
         <h1 className='contactPageTitle'>My Clients</h1>
         <p className='contactDesc'>I have had the opportunity to work with a diverse group of companies.
         Some of the notable companies I have worked with include:</p>
@@ -40,9 +40,9 @@ const Contact = () => {
         <img src={Adobe} alt="Client" className="clientImg" />
         <img src={Microsoft} alt="Client" className="clientImg" />
         <img src={Facebook} alt="Client" className="clientImg" />
-      </div>
+      </div> */}
       <div className='contact'>
-        <h1 id='contacts'>Contact Us</h1>
+        <h1 id='contact'>Contact Us</h1>
         <span className='contactDesc'>Please fill out the form below to discuss any work.</span>
         <form className='contactform' ref={form} onSubmit={sendEmail}>
           <input type='text' className='name' placeholder='Your Name' id='name'/>
